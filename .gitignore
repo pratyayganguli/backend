@@ -30,3 +30,41 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Build output
+out/
+build/
+target/
+bin/
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.tmp
+
+# Java
+*.class
+
+# Other
+hs_err_pid*
