@@ -1,11 +1,10 @@
 {
     "workbench.colorTheme": "GitHub Dark",
-    
+
     "editor.fontSize": 13,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-
+    
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 500,
-
 }
