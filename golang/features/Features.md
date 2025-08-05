@@ -7,3 +7,5 @@
     * Navigate to the package directory and run the command `go doc -http` you may specify the port if required.
     * Local documentation server will be started and you will be redirected to the documentation page in your browser.
     ![](../../assets/images/ss1.png)
+
+* **encoding/json/v2**: 
