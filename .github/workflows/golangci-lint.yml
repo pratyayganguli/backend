@@ -21,4 +21,7 @@ jobs:
         uses: golangci/golangci-lint-action@v8
         with:
           version: v2.1
-          args: ./golang
+      - name: run-golang-inside
+        run: |
+          cd golang
+          golangci-lint run ./...  
