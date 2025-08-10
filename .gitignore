@@ -10,63 +10,36 @@ Cargo.lock
 *.dll
 *.so
 *.dylib
-
+*gradlew
 *.test
-
+*.bat
+*.jar
 *.out
 coverage.*
 *.coverprofile
 profile.cov
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
 go.work
 go.work.sum
 **/vendor/
-
-# env file
 .env
-
-# Editor/IDE
-# .idea/
-# .vscode/
-
-# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 *.ipr
-
-# Build output
 out/
 build/
 target/
 bin/
-
-# Maven
 .mvn/
 !/.mvn/wrapper/maven-wrapper.jar
-
-# Gradle
 .gradle/
 **/build/
 !gradle/wrapper/gradle-wrapper.jar
-
-# Logs
 *.log
-
-# OS files
 .DS_Store
 Thumbs.db
-
-# Temporary files
 *.swp
 *.tmp
-
-# Java
 *.class
-
-# Other
+*.properties
 hs_err_pid*
