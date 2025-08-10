@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - golang-1.25-features
   pull_request:
 
 permissions:
@@ -22,3 +21,4 @@ jobs:
         uses: golangci/golangci-lint-action@v8
         with:
           version: v2.1
+          args: ./golang
