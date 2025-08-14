@@ -1,6 +1,6 @@
 module github.com/pratyayganguli/backend/golang/features
 
-go 1.24.5
+go 1.25.0
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.28.0

@@ -1,5 +1,3 @@
-module golang
+module github.com/pratyayganguli/backend/golang
 
-go 1.24.5
-
-require github.com/seancfoley/ipaddress-go v1.7.1 // indirect
+go 1.25.0

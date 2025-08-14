@@ -41,8 +41,11 @@ func (n *BSTNode) IsEmptyBSTTree() bool {
 	return false
 }
 
-func IsEmptyBSTTreeTest(t *testing.T) {
-
+func add() int {
+	return 1 + 2
 }
 
-// there needs to be recursive call
+func TestAdd(t *testing.T) {
+	sum := add()
+	fmt.Println(sum)
+}
