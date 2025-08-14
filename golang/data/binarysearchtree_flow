@@ -1,0 +1,6 @@
+While writing the code and implementing a BST the mantra is simple
+
+1. Insertion: 
+    A. Check if the root node is empty.
+    B. If the root node is empty, populate the root node
+    C. Ask for the entry in the left node or the right node, having the currentNode reference as the root node.
