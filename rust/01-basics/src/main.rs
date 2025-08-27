@@ -7,6 +7,5 @@ fn main() {
     if middle_name == "" {
         let full_name = format!("{first_name} {last_name}");
         print!("{full_name}")
-
     }
 }

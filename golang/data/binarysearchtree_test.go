@@ -15,13 +15,30 @@ type BSTNode struct {
 var (
 	RootNode    *BSTNode
 	CurrentNode *BSTNode
-	// using constants for better readability
+)
+
+const (
 	LeftDirection  string = "left"
 	RightDirection string = "right"
 )
 
+func InsertionBST() {
+	node := &BSTNode{}
+
+	node = node.Insert(10, LeftDirection)
+	node = node.Insert(20, RightDirection)
+	node = node.Insert(30, LeftDirection)
+}
+
 func (n *BSTNode) Insert(data int, direction string) *BSTNode {
 	n.Data = data
+
+	if RootNode == nil {
+		RootNode = n
+		CurrentNode = RootNode
+		return RootNode
+	}
+
 	if direction == LeftDirection {
 		n.Left = &BSTNode{}
 		CurrentNode = n.Left
@@ -41,11 +58,6 @@ func (n *BSTNode) IsEmptyBSTTree() bool {
 	return false
 }
 
-func add() int {
-	return 1 + 2
-}
-
-func TestAdd(t *testing.T) {
-	sum := add()
-	fmt.Println(sum)
+func TestInsertionBST(t *testing.T) {
+	InsertionBST()
 }
