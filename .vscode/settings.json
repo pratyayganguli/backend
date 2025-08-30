@@ -1,7 +1,7 @@
 {
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "GitHub Dark",
 
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
     

@@ -47,11 +47,5 @@ func EncryptRow(row *Row[string]) (string, []byte, []byte) {
 }
 
 func DecryptRow(b64CipherText string, nonce, key []byte) error {
-	if block, err := aes.NewCipher(key); err != nil {
-		panic(err)
-	} else {
-		
-
-	}
-
+	return nil
 }
