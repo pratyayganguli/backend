@@ -23,11 +23,11 @@ func TestAESEncryptDecryptFlow(t *testing.T) {
 			AESKey: *key,
 		}
 		if ct, err := se.Encrypt([]byte("Hi, is the connection secure?")); err == nil {
-			var sd SecureDecryptor[string] = &AESDecryptor[string]{
+			var sd SecureDecryptor = &AESDecryptor{
 				AESKey: *key,
 			}
-			if _, err := sd.Decrypt(ct); err == nil {
-				fmt.Println("success")
+			if plainBytes, err := sd.Decrypt(ct); err == nil {
+				fmt.Println(string(plainBytes))
 			} else {
 				fmt.Printf("fail: %s", err.Error())
 			}
