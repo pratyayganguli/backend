@@ -1,0 +1,1 @@
+docker run -d --name local-mongo -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=cidaas -e MONGO_INITDB_ROOT_PASSWORD=cidass@000 -e MONGO_INITDB_ROOT_DATABASE=cidaas-db mongo:latest
