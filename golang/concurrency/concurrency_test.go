@@ -59,6 +59,5 @@ func TestOddEvenPrint(t *testing.T) {
 	wg.Wait()
 }
 
-func TestOddThenEven(t *testing.T) {
-	// read from one channel and
+func TestWorkerPool(t *testing.T) {
 }
