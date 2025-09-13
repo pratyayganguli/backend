@@ -21,10 +21,8 @@ func TestBasicExecutor(t *testing.T) {
 
 // channels in golang are custom types though which go routines tranfer data with each other
 func TestOddEvenPrint(t *testing.T) {
-
 	// unbufferred channels created with make(), they do not have a fixed size
 	// helps to provide synchronous communication between sender and receiver
-
 	oddChan := make(chan int)
 	evenChan := make(chan int)
 	var wg sync.WaitGroup
