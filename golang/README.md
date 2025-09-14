@@ -28,7 +28,7 @@ You will be requiring the [Dockerfile](#dockerfile) and the Docker run command t
 docker build --build-arg GO_IMAGE=golang:1.25.1 --build-arg RUNTIME_IMAGE=alpine:latest -t github.com/pratyayganguli/backend/golang:latest .
 ```
 
-#### Dockerfile:####
+#### Dockerfile: ####
 
 ```Dockerfile
 #Global vars
