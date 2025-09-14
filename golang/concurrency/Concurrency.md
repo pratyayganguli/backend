@@ -1,4 +1,5 @@
-### Concurrency and Parallelism in Golang
+## Concurrency and Parallelism in Golang
+###### Last Draft Date: 14th December, 2025
 
 #### Go routines - 
 Go routines are light weighted threads scheduled by the Go runtime. They differ from the threads in other high level langauges because they are not scheduled by the OS, where there is a cost for context switching.
@@ -6,7 +7,6 @@ Go routines are light weighted threads scheduled by the Go runtime. They differ 
 The default size for a thread scheduled by the os can be somewhere between **~1mb** where as the go routines sizes range somewhere between **~1kb** a much smaller stack size.
 
 Go routines follow **M:N model**.
-
 
 #### M:N Model - 
 The M:N model specifies that `M` number of Go routines will be scheduled onto `N` OS threads, which run on `P` logical cores, this differs from the traditional threads which follows **1:1** model, Each task is mapped to Each thread.

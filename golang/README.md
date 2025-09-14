@@ -1,10 +1,12 @@
-## Golang Handbook
+## Golang Handbook: A Beginner to Advanced Guide
 
-Golang is a general purpose programming language which is statically typed and compiled. It was designed at Google.
+###### Last Draft Date: 14th December, 2025
+
+**Go:** Golang is a general purpose programming language which is statically typed and compiled. It was designed at Google.
 
 ### Execution of a Go Program - 
 
-As, go is a compiled language when we run commands like `go build` or `go run` the source code is converted into a binary (machine level code) which contains the Go runtime and all the other dependency.
+As, Go is a compiled language when we run commands like `go build` or `go run` the source code is converted into a binary (machine level code) which contains the Go runtime and all the other dependency.
 
 ### Important concepts:
 

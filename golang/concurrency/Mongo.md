@@ -1,5 +1,17 @@
-### Mongo DB
-Mongo db is a document based database primarily no-sql type. Some of the managed services of Mongo in Cloud plarforms are Mongo DB atlas with options for GCP and AWS deployment.
+## Mongo DB: A Guide for scaling Mongo DB to Production level
+
+###### Last Draft Date: 14th December, 2025
+
+**Mongo DB:** Mongo db is a document based database primarily no-sql type. Some of the managed services of Mongo in Cloud plarforms are Mongo DB atlas with options for GCP and AWS deployment.
+
+*Docker command to start the Mongo Conatiner:*
+```bash
+docker run --name CONTAINER_NAME -p 27017:27017 \ 
+-e MONGO_INITDB_ROOT_USERNAME=YOUR_USER \
+-e MONGO_INITDB_ROOT_PASSWORD=YOUR_SECREY_PASSWORD \
+-e MONGO_INITDB_ROOT_DATABASE=YOUR_DATABASE_NAME \
+-d mongo:latest
+```
 
 #### Sharding in Mongo DB - 
 
