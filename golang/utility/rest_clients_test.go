@@ -21,6 +21,9 @@ func TestBuildQueryParam(t *testing.T) {
 	absUrl := buildQueryParam(CATAAS_BASEURL+"/cats", qp)
 	fmt.Println(absUrl)
 }
+func TestDownloadFile(t *testing.T) {
+	downloadFile()
+}
 
 func basicGetResponse() string {
 	// create the http client object
@@ -44,6 +47,10 @@ func basicGetResponse() string {
 			}
 		}
 	}
+}
+
+func downloadFile() {
+	// todo: implement this
 }
 
 func buildQueryParam(url string, queryParams map[string]string) string {
