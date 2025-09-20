@@ -22,12 +22,14 @@ const (
 	RightDirection string = "right"
 )
 
-func InsertionBST() {
+// todo: change the signature of the function...
+func InsertionBST() *BSTNode {
 	node := &BSTNode{}
-
 	node = node.Insert(10, LeftDirection)
 	node = node.Insert(20, RightDirection)
 	node = node.Insert(30, LeftDirection)
+	node.Insert(40, RightDirection)
+	return node
 }
 
 func (n *BSTNode) Insert(data int, direction string) *BSTNode {
