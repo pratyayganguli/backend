@@ -1,6 +1,5 @@
-package com.github.pratyayganguli;
+package com.github.pratyayganguli.search;
 
-import com.github.pratyayganguli.search.BinarySearch;
 import org.junit.jupiter.api.Test;
 
 public class BinarySearchTest {
