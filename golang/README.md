@@ -12,7 +12,7 @@ As, Go is a compiled language when we run commands like `go build` or `go run` t
 
 - [Memory Management](./Memory-Management.md)
 - [Concurrency](./concurrency/Concurrency.md)
-- [Error Handling]()
+- [Error Handling](./error/ErrorHandlingPractices.md)
 - [Mongo DB](./concurrency/Mongo.md)
 - [Reflection](./Reflection.md)
 - [Design Patterns](./Design-Patterns.md)
