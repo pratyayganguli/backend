@@ -1,0 +1,4 @@
+package ws
+
+func BasicWSInitiator() {
+}

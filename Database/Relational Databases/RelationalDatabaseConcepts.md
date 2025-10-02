@@ -23,9 +23,9 @@ Usually developer considers using Relational Databases when -
 #### Effects of Normailization on Data: ####
 
 Normalization is a technique used in relational databases to organize data. It helps in - 
-- It reduces data redunndancy.
+- Reducing data redunndancy.
 - Improves the data integrity.
-- Makes the data easy to query.
+- Makes the data easy to be queried.
 
     ##### Types of Normal form: #####
     - **First normal form:** Each column must hold atomic values. No collections should be allowed in a single column.

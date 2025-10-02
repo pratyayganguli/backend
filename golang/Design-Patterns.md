@@ -27,7 +27,6 @@
     }
 
     func main() {
-
     }
     ```
 * **Liskov Substitution Principle-** Subtypes must be suitable for their base types without breaking behaviour. (Use the same example as above)
