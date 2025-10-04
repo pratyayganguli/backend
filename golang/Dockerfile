@@ -1,8 +1,8 @@
 
 # Building stage
 ARG GO_IMAGE=golang:1.25.1
-ARG RUNTIME_IMAGE=alpine:latest
 
+ARG RUNTIME_IMAGE=alpine:latest
 
 FROM ${GO_IMAGE} AS builder
 
@@ -19,7 +19,6 @@ COPY . .
 RUN go build -o main .
 
 # Running stage
-
 FROM ${RUNTIME_IMAGE}
 
 RUN apk --no-cache add ca-certificates 

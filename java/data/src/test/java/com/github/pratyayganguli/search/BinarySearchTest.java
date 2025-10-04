@@ -3,7 +3,6 @@ package com.github.pratyayganguli.search;
 import org.junit.jupiter.api.Test;
 
 public class BinarySearchTest {
-
     @Test
     void search() {
         BinarySearch bs = new BinarySearch();

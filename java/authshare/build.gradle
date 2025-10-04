@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.github.pratyayganguli'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // spring boot dependencies...
+    implementation("org.springframework.boot:spring-boot-starter-web:3.5.6")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.5.6")
+
+    // other dependencies...
+    annotationProcessor("org.projectlombok:lombok:1.18.42")
+    compileOnly("org.projectlombok:lombok:1.18.42")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.42")
+    testCompileOnly("org.projectlombok:lombok:1.18.42")
+}
+
+test {
+    useJUnitPlatform()
+}
