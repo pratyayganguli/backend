@@ -14,6 +14,7 @@ public class PasswordTest {
         SecureRandom secureRandom = new SecureRandom();
         byte[] randomBytes = secureRandom.generateSeed(1024);
         String b64Val = Base64.getEncoder().encodeToString(randomBytes).substring(10, 30);
-        Password password = new Password(UUID.randomUUID().toString(), b64Val.getBytes(StandardCharsets.UTF_8));
+        Password password = new Password();
+        password.setPassword(b64Val.getBytes(StandardCharsets.UTF_8));
     }
 }

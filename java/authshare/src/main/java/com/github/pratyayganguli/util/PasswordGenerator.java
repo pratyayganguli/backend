@@ -1,4 +1,4 @@
-package com.github.pratyayganguli.utils;
+package com.github.pratyayganguli.util;
 
 import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
