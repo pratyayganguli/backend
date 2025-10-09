@@ -35,3 +35,24 @@ mx.Lock()
 mx.Unlock()
 ```
 A mutex has less overhead than channels in Golang. It is used in critical scenarios where shared access needs to be synchronized.
+
+#### Mutex and Channels: When to use what?
+A mutex is supposed to protect access for shared memory, where as channels are used for communication message passing. They both operate in different scope catering different business requirement.
+
+**Mutex-** Mutex can be used when the write contention is more then read operations.
+
+- It helps in attaining a single lock.
+- It is more simple to implement.
+
+**RWMutex-** When you need to implement dual lock both on read and write modes, use RWmutex.
+    
+- Ideal for scenarios where you have more read contention.
+- You can put lock on read opeations.
+- A bit complex to implement.
+
+**TryLock and TryRLock-** They are non-blocking versions of **Lock()** and **RLock()**. They return false if the lock is not successful.
+
+*Classic Scenario for Deadlock-* If you forget to unlock a mutex, the hold will be eternal. Thus, resulting in dead lock.
+
+*Unlocking the same mutex twice-* If you unlock the same mutex twice a panic will be thrown.
+
