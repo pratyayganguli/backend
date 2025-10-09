@@ -142,3 +142,9 @@ func TestWorkerPool(t *testing.T) {
 	close(jobsChan)
 	wg.Wait()
 }
+
+// testing worker pool v2
+
+func TestSimulate(t *testing.T) {
+	Simulate()
+}
