@@ -15,7 +15,6 @@ backend/
 
 ````
 
--  Do not add Pet projects in this repository.
 -  Only document verified information.
 -  Use *Sentence casing* when you have a directory for Documentation.
 -  Use *Lower casing* when you have a directory containing source code and documentation.
