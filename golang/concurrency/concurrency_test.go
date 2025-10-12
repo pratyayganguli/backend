@@ -22,56 +22,14 @@ func TestBasicExecutor(t *testing.T) {
 	go basicExecute(&wg)
 	wg.Wait()
 }
-
-// channels in golang are custom types though which go routines tranfer data with each other
-func TestOddEvenPrint(t *testing.T) {
-	// unbufferred channels created with make(), they do not have a fixed size
-	// helps to provide synchronous communication between sender and receiver
-	oddChan := make(chan int)
-	evenChan := make(chan int)
-	var wg sync.WaitGroup
-
-	input := []int{1, 2, 3, 4, 5, 6, 7, 8}
-	wg.Add(2)
-
-	go func() {
-		defer wg.Done()
-		for num := range oddChan {
-			fmt.Printf("odd number %d\n", num)
-		}
-	}()
-
-	go func() {
-		defer wg.Done()
-		for num := range evenChan {
-			fmt.Printf("even number %d\n", num)
-		}
-	}()
-
-	for i := range input {
-		if input[i]%2 == 0 {
-			evenChan <- input[i]
-		} else {
-			oddChan <- input[i]
-		}
-	}
-
-	close(oddChan)
-	close(evenChan)
-	wg.Wait()
-}
-
-// the job channels hold the tasks which needs to be executed
-type Priority string
-
-const MEDIUM_PRIORITY Priority = "medium"
-const CRITICAL_PRIORITY Priority = "critical"
-
-type Job struct {
-	Id       int
-	Priority Priority
-}
-
 func TestSimulate(t *testing.T) {
 	Simulate()
+}
+
+func TestSimulateProducerConsumer(t *testing.T) {
+	SimulateProducerConsumer()
+}
+
+func TestThreadSafeSingleton(t *testing.T) {
+	ThreadSafeSingleton()
 }
