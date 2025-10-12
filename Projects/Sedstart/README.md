@@ -18,5 +18,4 @@ Lambda function is a stateless service provided by AWS, which can process tasks,
 - Execution time limitation: Not ideal for long running jobs.
 - Cold starts: It will basically spin up a container and then start processing, which will have an effect on latency.
 
-
 #### ECS ####

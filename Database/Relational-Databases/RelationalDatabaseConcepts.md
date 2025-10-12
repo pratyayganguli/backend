@@ -5,7 +5,7 @@
 
 #### What is Relational Database and when should we consider using it? ####
 
-Relational database is a kind of database where data is stored in tabular format in a more structured format.
+Relational database is a kind of database where data is stored in tabular format in a more structured format compared to other conventional formats like document-based, key-value pair. 
 
 Usually developer considers using Relational Databases when - 
 -  **Schema is consistent:** Whenever the data models are not subjected to flexibility. Relational databases prove to be effective as they offer rigid structure.
@@ -32,3 +32,15 @@ Normalization is a technique used in relational databases to organize data. It h
     - **Second normal form:** 1NF + All the non-key attributes must be dependent on a single primary key
     - **Third normal form:** 2 NF+ Non key attributes must not be be dependent on other non-key attributes.
     - **BCNF:** 3NF + Every determinant must be a candidate key which will act as a foreign key on the dependent table.
+
+
+#### Indexing in Relational Databases:
+
+An **index** is like a look up table which helps in retrieving the data faster, without scanning the entire table. The most common index which is being used is the **Btree** index.
+
+Types of indexes present:
+- Primary Index - Usually these indexes are made on primary keys of the table for e.g. `OrderId`, `ProductId`
+- Unique Index - These indexes are being prepared on unique values present in the table for e.g. `PhoneNumber`, `EmailAddress`
+- Composite Index - These indexes are being made on comnposite keys such as `EmailAddress` and `PhoneNumber`.
+
+
