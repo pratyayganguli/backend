@@ -1,7 +1,7 @@
 // all the code related to handling of mongo connections will be written over here...
 // proper documentation should be done on the source code level itself...
 
-package concurrency
+package mongo
 
 import (
 	"context"
@@ -27,22 +27,6 @@ func (c *Customer) CreateNewCustomer() {
 	if _, err := db.Collection("users").InsertOne(context.TODO(), c); err != nil {
 		log.Fatalf("could not insert data! %s", err.Error())
 	}
-}
-
-func TestCreateSimpleMongoConnection(t *testing.T) {
-	CreateSimpleMongoConnection()
-}
-
-func TestCreateMongoConnectionPool(t *testing.T) {
-	CreateMongoConnectionPool()
-}
-
-func TestCreateUser(t *testing.T) {
-	c := &Customer{
-		Id:    1,
-		Email: "alex@securemail.com",
-	}
-	c.CreateNewCustomer()
 }
 
 // starter code for creating a single mongo connection.
