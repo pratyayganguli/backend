@@ -1,5 +1,31 @@
 ## Concurrency and Parallelism in Golang
-###### Last Draft Date: 14th December, 2025
+
+Concurrency is one of the most important topic while developing scalable applications in Golang.
+
+This documentation along with the code examples helps you in covering all the necessary topics for a quick revision. 
+
+For Concurrency exercises refer to this [repo](https://github.com/loong/go-concurrency-exercises) in Github it has some of the problems which helps you in getting a good understanding of concurrency in Golang.
+
+
+#### Understanding the difference between Concurrency and Parallism
+Concurrency basically means doing many things at a time where as parallism means doing many things at the same time.
+
+_Let's take the example of a chef in a kitchen_ - 
+
+- A chef preparing multiple dishes at the same time not necessarily simultaneously is called Concurrency.
+- Multiple chefs preparing different dishes in the kitchen at the same time can be termed as Parallism.
+
+You have tools like Go routines and channels to support **concurrency** in Golang and when you spin off multiple go routines and the go scheduler maps them into multiple OS threads across the CPU cores, in that scenario **parallism** is achieved in golang
+
+You can set the `GOMAXPROCS` variable value to have that control.
+
+
+```go
+runtime.GOMAXPROCS(n)
+```
+
+**Note:**
+> _n refers to the number of CPU cores you wish to use_
 
 #### Go routines - 
 Go routines are light weighted threads scheduled by the Go runtime. They differ from the threads in other high level langauges because they are not scheduled by the OS, where there is a cost for context switching.
